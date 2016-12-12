@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaMusebotConductor:jar">
+    <output-path>$PROJECT_DIR$/build/artifacts/JavaMusebotConductor_jar</output-path>
+    <root id="archive" name="JavaMusebotConductor.jar">
+      <element id="module-output" name="Java Musebot Conductor" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/beads.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/NetUtil.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

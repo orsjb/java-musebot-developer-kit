@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Java_Keys_Examplebot:jar">
+    <output-path>$PROJECT_DIR$/../</output-path>
+    <root id="archive" name="Java_Keys_Examplebot.jar">
+      <element id="module-output" name="Java_Keys_Examplebot" />
+      <element id="module-output" name="Musebot Java Tools" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Musebot Java Tools/libs/beads.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../../Musebot Java Tools/libs/NetUtil.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

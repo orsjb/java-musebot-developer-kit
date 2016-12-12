@@ -1,0 +1,23 @@
+## version ##
+
+Give your musebot a version number (e.g., 1.0).
+
+## instrumentation ##
+
+Describes the instrumentation of your agent as best it can, anything from “bass guitar”, to “cut-up and pitch-shifted samples from 1990s TV adverts”
+
+## platform ##
+
+What software, languages, libraries your agent is built in or makes  ses, e.g., MaxMSP, C++, etc.
+
+## behaviour ##
+
+Gives a detailed indication of the style, e.g., “Bitches Brew style funk rhodes”, and any relevant information about what the system does, e.g., “takes solos when there is sufficient space”
+
+## license ##
+
+Give licence info for the project, including any dependencies
+
+## credits ##
+
+List all contributors and their roles.

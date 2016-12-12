@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MusebotJavaTools:jar">
+    <output-path>$PROJECT_DIR$/build</output-path>
+    <root id="archive" name="MusebotJavaTools.jar">
+      <element id="module-output" name="Musebot Java Tools" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/beads.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/libs/NetUtil.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

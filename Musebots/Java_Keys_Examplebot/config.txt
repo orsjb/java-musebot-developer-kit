@@ -1,0 +1,5 @@
+id Java_Keys_Examplebot@localhost
+mc_hostname localhost
+mc_listen_port 4747
+my_listen_port 7474
+output_channels 2
