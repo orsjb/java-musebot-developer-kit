@@ -1,0 +1,20 @@
+There are 3 IntelliJ projects.
+
+
+Java Musebot Conductor: 
+-----------------------
+Build from within IntelliJ using Build Artefacts. 
+Run using run.command.
+You should have jack installed.
+
+
+Musebot Java Tools:
+-------------------
+Build from within IntelliJ using Build Artefacts.
+Use the generated jar file in your projects. This bundles the NetUtil and Beads libraries. See the Java Keys Example for an example of how to use this in your projects.
+
+
+Musebots/Java_Keys_Examplebot:
+------------------------------
+This is set up as a Musebot with correct directory structure, but you also need to run Build Artefacts from within IntelliJ to generate app/Java_Keys_Examplebot.jar. Once that file is generated, the Musebot Conductor will be able to successfully launch the musebot.
+This requires jack to be running, which will be the case if you run the Java Musebot Conductor successfully. It will still survive without Jack.
