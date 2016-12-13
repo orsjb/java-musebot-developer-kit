@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.PrintStream;
+import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -94,7 +95,8 @@ public class Conductor extends Application {
 	Text tempoTextBox = new Text("Starting...");
 	double tempo = 120.0;
 	int nextPort = 7474;
-	boolean clientDebugMode = false;
+	boolean clientDebugMode = true;
+	InetSocketAddress debugAddress;
 	
 	Clock clock;
 	
@@ -114,6 +116,7 @@ public class Conductor extends Application {
 	}
 	
     public void start(Stage stage) {
+		debugAddress = new InetSocketAddress("localhost", nextPort++);
     	this.stage = stage;
     	//handle audio error
     	boolean audioError = AudioErrorHandler.handleAudioError(ac);
@@ -483,6 +486,10 @@ public class Conductor extends Application {
 		try {
 			for(ClientRep client : activeClients.values()) {
 				server.send(oscMsg, client.address);
+			}
+			//also send to the debug client (generic client port)
+			if(clientDebugMode) {
+				server.send(oscMsg, debugAddress);
 			}
 		} catch(IOException e) {
 			e.printStackTrace();

@@ -14,6 +14,7 @@ public class MusebotAssistant implements OSCListener {
 	
 	OSCServer server;
 	InetSocketAddress controllerAddress;
+	boolean debugMode;
 
     String clientID;
 	long lastHeartbeat = System.currentTimeMillis();
@@ -30,12 +31,17 @@ public class MusebotAssistant implements OSCListener {
 	Responder theResponder;
 	
 	public MusebotAssistant() {
+		this(false);
+	}
+
+	public MusebotAssistant(boolean debugMode) {
+		this.debugMode = debugMode;
 		//read in data from config file
 		try {
 			Scanner scanner = new Scanner(new File("config.txt"));
 			String conductorHostname = "";
 			int conductorListenPort = 0;
-			int myListenPort = 0;
+			int myListenPort = 7474;
 			while(scanner.hasNextLine()) {
 				String line = scanner.nextLine();
 				String[] parts = line.split("[ ]");
@@ -44,7 +50,7 @@ public class MusebotAssistant implements OSCListener {
 				} else if(parts[0].equals("mc_listen_port")) {
 					conductorListenPort = Integer.parseInt(parts[1]);
 				} else if(parts[0].equals("my_listen_port")) {
-					myListenPort = Integer.parseInt(parts[1]);	
+					if(!debugMode) myListenPort = Integer.parseInt(parts[1]);
 				} else if(parts[0].equals("id")) {
 					clientID = parts[1].trim();
 				}

@@ -38,8 +38,8 @@ public abstract class OBMusebotBaseClass extends Application implements MusebotA
     protected MusebotAssistant assistant;
 
     public final Random rng = new Random();
-    public final AudioContext ac = new AudioContext(512);     //control
-//    public final AudioContext ac = new AudioContext(new AudioServerIO.Jack(), 512);     //control
+//    public final AudioContext ac = new AudioContext(512);     //control
+    public final AudioContext ac = new AudioContext(new AudioServerIO.Jack(), 512);     //control
     UGen in;                        //input ugen
     Envelope masterGainEnv;         //master gain value
     Glide tempoCtrl;                //bpm tempo
