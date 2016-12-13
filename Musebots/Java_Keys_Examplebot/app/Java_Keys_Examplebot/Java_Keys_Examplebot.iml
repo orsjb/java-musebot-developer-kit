@@ -7,7 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="beads+netutil" level="project" />
     <orderEntry type="module" module-name="Musebot Java Tools" />
+    <orderEntry type="library" name="beads" level="project" />
+    <orderEntry type="library" name="NetUtil" level="project" />
   </component>
 </module>
