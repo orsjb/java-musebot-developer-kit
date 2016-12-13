@@ -25,15 +25,13 @@ public class JackShellController {
     Map<String, List<String>[]> ports;
 
     public static void main(String[] args) {
-
         JackShellController jm = new JackShellController();
         jm.startJack(512, 44100, 4, 4);
-
         //dumb gui
-        JFrame frame = new JFrame();
-        frame.setSize(300, 50);
-        frame.add(new JLabel("   Jack on! Look out for feedback!..."));
-        frame.setVisible(true);
+//        JFrame frame = new JFrame();
+//        frame.setSize(300, 50);
+//        frame.add(new JLabel("   Jack on! Look out for feedback!..."));
+//        frame.setVisible(true);
     }
 
     public JackShellController() {

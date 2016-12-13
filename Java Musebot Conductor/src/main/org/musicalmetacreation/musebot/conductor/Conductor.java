@@ -95,8 +95,10 @@ public class Conductor extends Application {
 	Text tempoTextBox = new Text("Starting...");
 	double tempo = 120.0;
 	int nextPort = 7474;
-	boolean clientDebugMode = true;
 	InetSocketAddress debugAddress;
+
+	static boolean clientDebugMode = true;
+	static boolean headless = true;
 	
 	Clock clock;
 	
@@ -112,24 +114,32 @@ public class Conductor extends Application {
 		ac.start();
 		//Wait 2s. Ugly workaround to address a clash between ac.start and launching the GUI.
 		Thread.sleep(2000);
-		Application.launch(args);
+		if(headless) {
+			new Conductor().startHeadless();
+		} else {
+			Application.launch(args);
+		}
 	}
-	
-    public void start(Stage stage) {
+
+	public void startHeadless() {
 		debugAddress = new InetSocketAddress("localhost", nextPort++);
-    	this.stage = stage;
-    	//handle audio error
-    	boolean audioError = AudioErrorHandler.handleAudioError(ac);
-    	//build known client list
+		//handle audio error
+		boolean audioError = AudioErrorHandler.handleAudioError(ac);
+		//build known client list
 		rebuildKnownClientListFromScratch();
 		//set up network listener and broadcasters
 		setupNetworkCommunication();
-		//set up GUI
-		setupGUI(stage);
 		//run audio error alert
 		if(audioError) {
 			AudioErrorHandler.runAudioErrorAlert("Java Musebot Conductor");
 		}
+	}
+	
+    public void start(Stage stage) {
+		startHeadless();
+		this.stage = stage;
+		//set up GUI
+		setupGUI(stage);
     }
     
     void setupGUI(Stage stage) {
@@ -253,7 +263,9 @@ public class Conductor extends Application {
     
     void tick() {
     	sendToClients("/mc/time", tempo, tick++);
-		Platform.runLater(() -> tempoTextBox.setText(" " +  Config.DP2.format(tempo) + " bpm. Beat/Tick Time: " + (tick / 16) + "/" + tick % 16));
+		if(!headless) {
+			Platform.runLater(() -> tempoTextBox.setText(" " + Config.DP2.format(tempo) + " bpm. Beat/Tick Time: " + (tick / 16) + "/" + tick % 16));
+		}
     }
 	
 	void rebuildKnownClientListFromScratch() {	

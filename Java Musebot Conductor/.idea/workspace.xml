@@ -7,16 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee031e90-2dc6-491e-838b-535f20eaa6d1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../Musebot Java Tools/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Musebot Java Tools/libs/beads.jar" afterPath="$PROJECT_DIR$/../Musebot Java Tools/libs/beads.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Conductor.java" afterPath="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Conductor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Musebot Java Tools/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Musebot Java Tools/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Musebot Java Tools/src/org/musicalmetacreation/musebot/tools/AudioErrorHandler.java" afterPath="$PROJECT_DIR$/../Musebot Java Tools/src/org/musicalmetacreation/musebot/tools/AudioErrorHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Musebot Java Tools/src/org/musicalmetacreation/musebot/tools/MusebotAssistant.java" afterPath="$PROJECT_DIR$/../Musebot Java Tools/src/org/musicalmetacreation/musebot/tools/MusebotAssistant.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Musebot Java Tools/src/org/musicalmetacreation/musebot/tools/OBMusebotBaseClass.java" afterPath="$PROJECT_DIR$/../Musebot Java Tools/src/org/musicalmetacreation/musebot/tools/OBMusebotBaseClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Musebots/Java_Keys_Examplebot/app/Java_Keys_Examplebot/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../Musebots/Java_Keys_Examplebot/app/Java_Keys_Examplebot/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/JackShellController.java" afterPath="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/JackShellController.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -37,8 +29,8 @@
       <file leaf-file-name="Conductor.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Conductor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="492" column="13" lean-forward="true" selection-start-line="492" selection-start-column="13" selection-end-line="492" selection-end-column="13" />
+            <state relative-caret-position="72">
+              <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -52,6 +44,7 @@
       <find>unkno</find>
       <find>InetSocketAddress</find>
       <find>nextPo</find>
+      <find>runLater</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -73,7 +66,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/EZShell.java" />
-        <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/JackShellController.java" />
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/AudioErrorHandler.java" />
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Host.java" />
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Config.java" />
@@ -81,6 +73,7 @@
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/ClientRep.java" />
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/experimental/MulticastTest.java" />
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/experimental/RemoteInvocationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/JackShellController.java" />
         <option value="$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Conductor.java" />
       </list>
     </option>
@@ -505,7 +498,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1276" height="777" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -516,13 +509,13 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34160584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42481753" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2884927" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3241491" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="HappyBrackets" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -638,14 +631,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/JackShellController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2145">
-          <caret line="65" column="26" lean-forward="true" selection-start-line="65" selection-start-column="26" selection-end-line="65" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/ClientRep.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -654,10 +639,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/util/JackShellController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="29" column="18" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_91.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/PlatformImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="272" column="0" lean-forward="false" selection-start-line="272" selection-start-column="0" selection-end-line="272" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/org/musicalmetacreation/musebot/conductor/Conductor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="492" column="13" lean-forward="true" selection-start-line="492" selection-start-column="13" selection-end-line="492" selection-end-column="13" />
+        <state relative-caret-position="72">
+          <caret line="122" column="0" lean-forward="true" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
           <folding />
         </state>
       </provider>
