@@ -148,7 +148,7 @@ public class MusebotAssistant implements OSCListener {
                 synchronized (MusebotAssistant.this) {
                     lastHeartbeat = System.currentTimeMillis();
                 }
-                System.out.println("Hearbeat received. Time = " + lastHeartbeat);
+                if(printMessage) System.out.println("Hearbeat received. Time = " + lastHeartbeat);
 			}
 			if(theResponder != null) theResponder.incoming(msg);
 		}

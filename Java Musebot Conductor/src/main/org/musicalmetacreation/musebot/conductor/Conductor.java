@@ -98,10 +98,9 @@ public class Conductor extends Application {
 	InetSocketAddress debugAddress;
 
 	static boolean clientDebugMode = true;
-	static boolean headless = true;
+	static boolean headless = false;
 	
 	Clock clock;
-	
 	
 	public static void main(String[] args) throws InterruptedException {
 		//do jack stuff...
